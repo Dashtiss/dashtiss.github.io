@@ -50,6 +50,8 @@
 <body>
     <div id="navbar">
         <a href="../index.html">Home</a>
+        <a href="../LightPlug">LightPlug</a>
+        <a href="../CIANN.html">Chaos Announcements</a>
     </div>
     <div class="container">
         <div class="container">
@@ -71,28 +73,5 @@
             </ul>
     </div>
 
-    <script>
-        // JavaScript code to dynamically update the navigation bar
-        function updateNavbar() {
-            const container = document.querySelector('.container');
-            const navbar = document.getElementById('navbar');
-
-            // Clear existing navigation links
-            navbar.innerHTML = '<a href="../index.html">Home</a>';
-
-            // Fetch all folders and HTML files within the container
-            const items = Array.from(container.children);
-
-            items.forEach(item => {
-                if (item.tagName === 'A' && item.href) {
-                    // Create a new link in the navigation bar for each HTML file
-                    navbar.innerHTML += `<a href="${item.href}">${item.textContent}</a>`;
-                }
-            });
-        }
-
-        // Call the function to initially set up the navigation bar
-        updateNavbar();
-    </script>
 </body>
 </html>
