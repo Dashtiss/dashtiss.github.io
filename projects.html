@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Dashtiss</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">MySite</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>Here are some of my current projects.</p>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>PyPlayer</h3>
+                    <p>Python based discord music bot</p>
+                </div>
+            </div>
+        </section>
+        <div class="carousel">
+            <button class="carousel-btn prev" onclick="moveCarousel(-1)">&#10094;</button>
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <!-- Project Template -->
+                    <div class="project">
+                        <img src="images/PyPlayer.png" alt="Project 1">
+                        <h3>Pyplayer</h3>
+                        <p>Python based discord music bot</p>
+                        <a href="https://github.com/Dashtiss/PyPlayer" class="btn" target="_blank">View on GitHub</a>
+                    </div>
+                    <!-- Copy and Paste for New Projects -->
+                    <div class="project">
+                        <img src="images/MySite.png" alt="Project 2">
+                        <h3>My Site</h3>
+                        <p>My main site which your are viewing right now.</p>
+                        <a href="https://github.com/Dashtiss/dashtiss.github.io" class="btn" target="_blank">View on GitHub</a>
+                    </div>
+                    <!-- Add more projects here -->
+                </div>
+            </div>
+            <button class="carousel-btn next" onclick="moveCarousel(1)">&#10095;</button>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Dashtiss. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
